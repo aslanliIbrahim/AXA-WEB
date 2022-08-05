@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../Img/MainPhoto/image 1 (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main nav .nav-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main nav .nav-area .nav-right ul {
+  height: 100%;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main nav .nav-area .nav-right ul li {
+  list-style: none;
+  color: #F5F5F5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 2px;
+}
+
+#main nav .nav-area .nav-right ul li:hover {
+  cursor: pointer;
+  color: #147D70;
+}
+
+#main .main-cards-area .card-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main .main-cards-area .card-area .for-margin {
+  border-right: 1px solid #F5F5F5;
+  border-left: 2px solid #F5F5F5;
+  padding: 10px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .main-cards-area .card-area .for-margin:hover {
+  border: 1px solid #F5F5F5;
+  border-top-right-radius: 60px 60px;
+}
+
+#main .main-cards-area .card-area .for-margin .cards {
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .main-cards-area .card-area .for-margin .cards:hover {
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  border-top-right-radius: 60px 60px;
+  color: #147D70;
+  cursor: pointer;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .writing-side {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .for-border {
+  border-bottom: 2px solid;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .lab {
+  font-size: 30px;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .down-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .down-side .writing-down {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#main .main-cards-area .card-area .for-margin .cards .down-side .arrow {
+  font-size: 20px;
+}
+
+#main .main-down-side {
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#main .main-down-side p {
+  font-size: 77.8px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=index.css.map */

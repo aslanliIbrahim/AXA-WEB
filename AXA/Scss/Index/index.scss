@@ -1,0 +1,118 @@
+@import "../Variable.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+#main{
+    // border: 2px solid red;  
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../Img/MainPhoto/image\ 1\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        .nav-area{
+            display: flex;
+            justify-content: space-between;
+            .nav-right{
+                // border: 2px solid red;
+                ul{
+                    // border: 2px solid blue;
+                    height: 100%;
+                    color: $white-color;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                   
+                   
+                    li{
+                        list-style: none;
+                        color: $white-color;
+                        transition: 0.2s;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin: 2px;
+                        &:hover{
+                            cursor: pointer;
+                            color: $green-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-cards-area{
+        // border: 2px solid blue;
+        // height: 500px;
+        .card-area{
+            // border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .for-margin{
+                border-right: 1px solid $white-color;
+                border-left: 2px solid $white-color;
+                padding: 10px 10px;
+                transition: 0.2s;
+                &:hover{
+                    border: 1px solid $white-color;
+                    border-top-right-radius: 60px 60px;
+                }
+                .cards{
+                    color: $white-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    transition: 0.2s;
+                    &:hover{
+                        background-color: $white-color;
+                        border: 1px solid $white-color;
+                        border-top-right-radius: 60px 60px;
+                        color: $green-color;
+                        cursor: pointer;
+                    }
+                    .writing-side{
+                        font-weight: 500;
+                        font-size: 15px;
+
+                        
+                    }
+                    .for-border{
+                        border-bottom: 2px solid;
+                    }
+                    .lab{
+                        font-size: 30px;
+                    }
+                    .down-side{
+                        // border: 2px solid red;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        .writing-down{
+                            // border: 2px solid red;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                        .arrow{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-down-side{
+        // border: 2px solid red;
+        color: $white-color;
+        display: flex;
+        flex-direction: row-reverse;
+        p{
+            font-size: 77.8px;
+            font-weight: 700;
+        }
+    }
+}
