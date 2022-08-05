@@ -52,7 +52,7 @@
   color: #147D70;
 }
 
-#main .main-cards-area .card-area {
+#main .main-cards-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,13 @@
           justify-content: space-evenly;
 }
 
-#main .main-cards-area .card-area .for-margin {
+@media only screen and (max-width: 576px) {
+  #main .main-cards-area {
+    width: 100%;
+  }
+}
+
+#main .main-cards-area .for-margin {
   border-right: 1px solid #F5F5F5;
   border-left: 2px solid #F5F5F5;
   padding: 10px 10px;
@@ -72,12 +78,12 @@
   transition: 0.2s;
 }
 
-#main .main-cards-area .card-area .for-margin:hover {
+#main .main-cards-area .for-margin:hover {
   border: 1px solid #F5F5F5;
   border-top-right-radius: 60px 60px;
 }
 
-#main .main-cards-area .card-area .for-margin .cards {
+#main .main-cards-area .for-margin .cards {
   color: #F5F5F5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,28 +99,28 @@
   transition: 0.2s;
 }
 
-#main .main-cards-area .card-area .for-margin .cards:hover {
+#main .main-cards-area .for-margin .cards:hover {
   background-color: #F5F5F5;
   border: 1px solid #F5F5F5;
   border-top-right-radius: 60px 60px;
-  color: #147D70;
+  color: #147D70 !important;
   cursor: pointer;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .writing-side {
+#main .main-cards-area .for-margin .cards .writing-side {
   font-weight: 500;
   font-size: 15px;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .for-border {
+#main .main-cards-area .for-margin .cards .for-border {
   border-bottom: 2px solid;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .lab {
+#main .main-cards-area .for-margin .cards .lab {
   font-size: 30px;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .down-side {
+#main .main-cards-area .for-margin .cards .down-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,12 +132,13 @@
           align-items: center;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .down-side .writing-down {
-  font-size: 12px;
-  font-weight: 600;
+#main .main-cards-area .for-margin .cards .down-side .writing-down {
+  text-decoration: none !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
 }
 
-#main .main-cards-area .card-area .for-margin .cards .down-side .arrow {
+#main .main-cards-area .for-margin .cards .down-side .arrow {
   font-size: 20px;
 }
 
@@ -149,5 +156,75 @@
 #main .main-down-side p {
   font-size: 77.8px;
   font-weight: 700;
+}
+
+#caruselArea {
+  background-color: #F9F9F9;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-color: #FFFFFF;
+  color: #147D70;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.swiper-slide:hover {
+  color: #FFFFFF;
+  background-color: #147D70;
+  cursor: pointer;
+}
+
+.swiper-slide .carusel-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-slide .carusel-img img {
+  width: 15%;
+  color: red;
+}
+
+.swiper-slide .caruesel-writing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide .caruesel-writing p {
+  width: 60%;
+  text-align: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */

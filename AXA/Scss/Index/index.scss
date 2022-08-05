@@ -47,12 +47,14 @@
     }
     .main-cards-area{
         // border: 2px solid blue;
-        // height: 500px;
-        .card-area{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+        @media only screen and (max-width: 576px){
             // border: 2px solid red;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            width: 100%;
+        }
             .for-margin{
                 border-right: 1px solid $white-color;
                 border-left: 2px solid $white-color;
@@ -68,11 +70,12 @@
                     flex-direction: column;
                     justify-content: space-evenly;
                     transition: 0.2s;
+                    // border: 2px solid red;
                     &:hover{
                         background-color: $white-color;
                         border: 1px solid $white-color;
                         border-top-right-radius: 60px 60px;
-                        color: $green-color;
+                        color: $green-color !important;
                         cursor: pointer;
                     }
                     .writing-side{
@@ -94,8 +97,9 @@
                         align-items: center;
                         .writing-down{
                             // border: 2px solid red;
-                            font-size: 12px;
-                            font-weight: 600;
+                            text-decoration: none !important;
+                            font-size: 12px !important;
+                            font-weight: 600 !important;
                         }
                         .arrow{
                             font-size: 20px;
@@ -103,7 +107,7 @@
                     }
                 }
             }
-        }
+        
     }
     .main-down-side{
         // border: 2px solid red;
@@ -115,4 +119,56 @@
             font-weight: 700;
         }
     }
+}
+
+#caruselArea{
+    background-color: $background;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    // border: 2px solid red;
+    background-color: $caruesel-white;
+    color:$green-color;
+    border: 2px solid $caruesel-white;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+    &:hover{
+        color: $caruesel-white;
+        background-color:$green-color;
+        cursor: pointer;
+        
+    }
+    .carusel-img{
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 15%;
+            color: red;
+           
+        }
+    }
+    .caruesel-writing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+        //    border: 2px solid red;
+           width: 60%;
+           text-align: center;
+        }
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
